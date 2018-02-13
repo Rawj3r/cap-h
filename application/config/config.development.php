@@ -73,14 +73,6 @@ return array(
     *   DB_CHARSET The charset, necessary for security reasons. Check Database.php class for more info.
     */
 
-    // 'DB_TYPE' => 'mysql',
-    // 'DB_HOST' => 'sql14.cpt3.host-h.net',
-    // 'DB_NAME' => 'mpumakjvnm_db1',
-    // 'DB_USER' => 'mpumakjvnm_1',
-    // 'DB_PASS' => 'tLDqREWfbX8',
-    // 'DB_PORT' => '3306',
-    // 'DB_CHARSET' => 'utf8',
-
     'DB_TYPE' => 'mysql',
     'DB_HOST' => '127.0.0.1',
     'DB_NAME' => 'caph',
@@ -88,22 +80,6 @@ return array(
     'DB_PASS' => '',
     'DB_PORT' => '3306',
     'DB_CHARSET' => 'utf8',
-
-    //  'DB_TYPE' => 'mysql',
-    // 'DB_HOST' => 'dedi227.cpt3.host-h.net',
-    // 'DB_NAME' => 'caphcqvfsd_db1',
-    // 'DB_USER' => 'caphcqvfsd_1',
-    // 'DB_PASS' => 'xtZDV4wFXK8',
-    // 'DB_PORT' => '3306',
-    // 'DB_CHARSET' => 'utf8',
-
-    //   'DB_TYPE' => 'mysql',
-    // 'DB_HOST' => '127.0.0.1',
-    // 'DB_NAME' => 'holist0_xyxprocap',
-    // 'DB_USER' => 'holist0_AdminCH',
-    // 'DB_PASS' => 'UL#hJSt8-apB',
-    // 'DB_PORT' => '3306',
-    // 'DB_CHARSET' => 'utf8',
 
 
 
@@ -180,33 +156,7 @@ return array(
     *   EMAIL_SMTP_AUTH: leave this true unless your SMTP service does not need authentication
     */
 
-    
-    // 'EMAIL_USED_MAILER' => 'phpmailer',
-    // 'EMAIL_USE_SMTP' => true,
-    // 'EMAIL_SMTP_HOST' => 'smtp.holisticadvance.com',
-    // 'EMAIL_SMTP_AUTH' => true,
-    // 'EMAIL_SMTP_USERNAME' => 'caphapp@holisticadvance.com',
-    // 'EMAIL_SMTP_PASSWORD' => '%Tu1J8hDm$LZ',
-    // 'EMAIL_SMTP_PORT' => 465,
-    // 'EMAIL_SMTP_ENCRYPTION' => 'ssl',
-    
-    // 'EMAIL_USED_MAILER' => 'phpmailer',
-    // 'EMAIL_USE_SMTP' => true,
-    // 'EMAIL_SMTP_HOST' => 'smtp.gmail.com',
-    // 'EMAIL_SMTP_AUTH' => true,
-    // 'EMAIL_SMTP_USERNAME' => 'thabzag@gmail.com',
-    // 'EMAIL_SMTP_PASSWORD' => 'iCreate4toybox',
-    // 'EMAIL_SMTP_PORT' => 465,
-    // 'EMAIL_SMTP_ENCRYPTION' => 'ssl',
 
-      'EMAIL_USED_MAILER' => 'phpmailer',
-    'EMAIL_USE_SMTP' => true,
-    'EMAIL_SMTP_HOST' => 'smtp.cap-h.co',
-    'EMAIL_SMTP_AUTH' => true,
-    'EMAIL_SMTP_USERNAME' => 'no-reply@cap-h.co',
-    'EMAIL_SMTP_PASSWORD' => 'FZC?5L^]*qRF&Zdc',
-    'EMAIL_SMTP_PORT' => 465,
-    'EMAIL_SMTP_ENCRYPTION' => 'ssl',
 
     /**
     *   Configuration for: Email content data
@@ -214,12 +164,12 @@ return array(
 
  
     'EMAIL_PASSWORD_RESET_URL' => 'login/verifypasswordreset',
-    'EMAIL_PASSWORD_RESET_FROM_EMAIL' => 'no-reply@cap-h.co',
+    'EMAIL_PASSWORD_RESET_FROM_EMAIL' => 'no-reply@holisticadvance.com',
     'EMAIL_PASSWORD_RESET_FROM_NAME' => 'CAP H',
     'EMAIL_PASSWORD_RESET_SUBJECT' => 'Password reset for CAP H',
     'EMAIL_PASSWORD_RESET_CONTENT' => 'Please click on this link to reset your password: ',
     'EMAIL_VERIFICATION_URL' => 'register/verify',
-    'EMAIL_VERIFICATION_FROM_EMAIL' => 'no-reply@cap-h.co',
+    'EMAIL_VERIFICATION_FROM_EMAIL' => 'no-reply@holisticadvance.com',
     'EMAIL_VERIFICATION_FROM_NAME' => 'CAP H',
     'EMAIL_VERIFICATION_SUBJECT' => 'Account activation for CAP H',
     'EMAIL_VERIFICATION_CONTENT' => 'Please click on this link to activate your account: ',
