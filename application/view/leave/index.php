@@ -6,7 +6,7 @@
             <?php $this->renderFeedbackMessages(); ?>
             <h2>Leave application</h2>
             <br><br>
-            <form method="post" action="<?php echo Config::get('URL');?>leave/create">
+            <form method="post" onsubmit="return validateForm()" action="<?php echo Config::get('URL');?>leave/create">
                 <label class="subheader"><b>Leave type</b></label>
                 <select name="leave_id">
                     <option value="1">Annual leave</option>
@@ -34,3 +34,46 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+
+function validateForm() {
+
+    var currentTime = new Date()
+    var month = currentTime.getMonth() + 1
+    var day = currentTime.getDate()
+    var year = currentTime.getFullYear()
+    var today = new Date(year + "-" + month + "-" + day);
+
+    
+
+    var x = document.forms["leave"]["from_date"].value;
+    var fromDate = new Date(x);
+    alert(today)
+    // alert(fromDate)
+    //          alert(today>fromDate)
+
+    if (fromDate > today) {
+        return true;
+    } else {
+        alert("Your leave application date is invalid");
+    }
+}
+
+function todayDate() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd
+    }
+
+    if (mm < 10) {
+        mm = '0' + mm
+    }
+
+    today = yyyy + '-' + dd + '-' + mm;
+}
+</script>

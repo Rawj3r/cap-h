@@ -34,7 +34,7 @@
         *   Register page
         *   Show the register form, but redirect to main-page if user is already logged-in
         */
-        public function new(){
+        public function news(){
 
             $this->View->render('create/new');
         }
