@@ -1,6 +1,8 @@
 # This file is - if you set up HUGE correctly - not needed.
 # But, for fallback reasons (if you don't route your vhost to /public), it will stay here.
 RewriteEngine on
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.uat.cap-h.co/$1 [R,L]
 RewriteRule ^(.*) public/$1 [L]
 
 # Everything from is for browser caching and is totally optional

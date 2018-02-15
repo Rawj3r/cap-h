@@ -73,16 +73,7 @@ return array(
     *   DB_CHARSET The charset, necessary for security reasons. Check Database.php class for more info.
     */
 
-    // 'DB_TYPE' => 'mysql',
-    // 'DB_HOST' => '127.0.0.1',
-    // 'DB_NAME' => 'caph',
-    // 'DB_USER' => 'root',
-    // 'DB_PASS' => '',
-    // 'DB_PORT' => '3306',
-    // 'DB_CHARSET' => 'utf8',
-
-
-    'DB_TYPE' => 'mysql',
+'DB_TYPE' => 'mysql',
     'DB_HOST' => 'dedi227.cpt3.host-h.net',
     'DB_NAME' => 'caphcqvfsd_db1',
  'DB_USER' => 'caphcqvfsd_1',
@@ -90,7 +81,17 @@ return array(
  'DB_PORT' => '3306',
 'DB_CHARSET' => 'utf8',
 
-
+    'ENCRYPTION_KEY' => '6#x0gÊìf^25cL1f$08&',
+    'HMAC_SALT' => '8qk9c^4L6d#15tM8z7n0%',
+    'EMAIL_USED_MAILER' => 'phpmailer',
+    'EMAIL_USE_SMTP' => false,
+    'EMAIL_SMTP_HOST' => 'smtp.cap-h.co',
+    'EMAIL_SMTP_AUTH' => true,
+    'EMAIL_SMTP_USERNAME' => 'no-reply@cap-h.co',
+    'EMAIL_SMTP_PASSWORD' => '=fL@qKr2=aeeU$WK',
+    'EMAIL_SMTP_PORT' => 587,
+    'EMAIL_SMTP_ENCRYPTION' => 'ssl',
+    
 
 
 
@@ -151,17 +152,6 @@ return array(
     *   the cookie. Change these values for increased security, but don't touch if you have no idea what this means.
     */
 
-    'ENCRYPTION_KEY' => '6#x0gÃŠÃ¬f^25cL1f$08&',
-    'HMAC_SALT' => '8qk9c^4L6d#15tM8z7n0%',
-
-          'EMAIL_USED_MAILER' => 'phpmailer',
-    'EMAIL_USE_SMTP' => false,
-    'EMAIL_SMTP_HOST' => 'smtp.cap-h.co',
-    'EMAIL_SMTP_AUTH' => true,
-    'EMAIL_SMTP_USERNAME' => 'no-reply@cap-h.co',
-    'EMAIL_SMTP_PASSWORD' => '=fL@qKr2=aeeU$WK',
-    'EMAIL_SMTP_PORT' => 587,
-    'EMAIL_SMTP_ENCRYPTION' => 'ssl',
 
     /**
     *   Configuration for: Email server credentials
@@ -176,7 +166,16 @@ return array(
     *   EMAIL_SMTP_AUTH: leave this true unless your SMTP service does not need authentication
     */
 
+    
 
+    // 'EMAIL_USED_MAILER' => 'phpmailer',
+    // 'EMAIL_USE_SMTP' => true,
+    // 'EMAIL_SMTP_HOST' => 'smtp.gmail.com',
+    // 'EMAIL_SMTP_AUTH' => true,
+    // 'EMAIL_SMTP_USERNAME' => 'thabzag@gmail.com',
+    // 'EMAIL_SMTP_PASSWORD' => 'iCreate4toybox',
+    // 'EMAIL_SMTP_PORT' => 465,
+    // 'EMAIL_SMTP_ENCRYPTION' => 'ssl',
 
     /**
     *   Configuration for: Email content data
@@ -193,5 +192,4 @@ return array(
     'EMAIL_VERIFICATION_FROM_NAME' => 'CAP H',
     'EMAIL_VERIFICATION_SUBJECT' => 'Account activation for CAP H',
     'EMAIL_VERIFICATION_CONTENT' => 'Please click on this link to activate your account: ',
-
 );

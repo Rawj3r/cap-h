@@ -133,3 +133,4 @@ class Session
         return (self::get('user_logged_in') ? true : false);
     }
 }
+?>
